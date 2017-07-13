@@ -80,3 +80,20 @@
 //     }
 // });
 
+$(function(){
+    $("#chatData").focus();//输入框获得焦点
+    $('<audio id="chatAudio">' +
+        '<source src="audio/Hit.mp3" type="audio/mpeg">' +
+        '</audio>').appendTo('body');//载入声音文件
+    $("#trig").click(function(){
+        var a = $("#chatData").val().trim();//获取输入的内容
+        if(a.length > 0){
+            $("#chatData").val(''); //清空输入框
+            $("#chatData").focus(); //获得焦点
+            $("<li></li>").html('<img src="img/qq.gif"/><span>'+a+'</span>')
+                .appendTo("#chatMessages");//将输入的内容追加的聊天区
+            $("#chat").animate({"scrollTop": $('#chat')[0].scrollHeight}, "slow");//调整滚动条
+            $('#chatAudio')[0].play(); //播放声音
+        }
+    });
+});

@@ -39,3 +39,14 @@ z-index 值默认为0，当值相同时，越晚加载的标签，所在的层�
     border: 1px solid red;
 
 }
+
+
+#chatBox{width:400px;border:1px solid #d3d3d3;margin:50px auto;}
+#chat {max-height:220px;overflow-y:auto;max-width:400px;}
+#chat > ul > li{padding:3px;clear:both;padding:4px;margin:10px 0px 5px 0px;overflow:auto}
+#chatMessages{list-style:none}
+#chatMessages > li > img{width:35px;float:left}
+#chatMessages > li > span{width:300px;float:left;margin-left:5px}
+#chatData{padding:5px;margin:5px;border-radius:5px;border:1px solid #999;width:300px}
+#trig {border: 1px solid #390; color:#fff; background: #360;-webkit-border-radius: 3px;
+    -moz-border-radius:3px;padding:5px 8px; cursor:pointer}
