@@ -1,0 +1,30 @@
+#github.com 
+HTTPS:	https://github.com/hzc3733/amazing.git
+SSH: 	git@github.com:hzc3733/amazing.git
+-----------------------------------------------------------
+
+…or create a new repository on the command line
+echo "# amazing" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:hzc3733/amazing.git
+git push -u origin master
+
+…or push an existing repository from the command line
+
+git remote add origin git@github.com:hzc3733/amazing.git
+git push -u origin master
+-----------------------------------------------------------
+
+eclipse git插件install new software...
+http://download.eclipse.org/egit/updates/
+
+eclipse git使用 
+commit：将修改的文件或者删除的文件 提交到库，一般是在 git add 后执行
+pull：是从远端仓库把更新拖到本地
+push：试讲本地仓库更新推送到远端
+remote :是查询远端仓库的信息或则设置远端仓库‘
+merge :合并当前分支上的某个子分支到当前的分支
+swich to:转换到某个使用的分支上
+reset:将仓库恢复到某个节点上
